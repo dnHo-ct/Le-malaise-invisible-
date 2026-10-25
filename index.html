@@ -545,6 +545,34 @@
             }
         }
     </script>
+    <!-- Tout ton contenu de site est ici -->
+
+    <!-- Widget de traduction automatique Google -->
+    <div id="google_translate_element" style="display:none;"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'fr',
+          includedLanguages: 'en,fr',
+          autoDisplay: false
+        }, 'google_translate_element');
+
+        // Détection automatique de la langue du navigateur
+        setTimeout(function() {
+          const userLang = navigator.language || navigator.userLanguage;
+          if (userLang.toLowerCase().startsWith('en')) {
+            const selectField = document.querySelector(".goog-te-combo");
+            if (selectField) {
+              selectField.value = "en";
+              selectField.dispatchEvent(new Event("change"));
+            }
+          }
+        }, 1000);
+      }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>
 
 </body>
 </html>
