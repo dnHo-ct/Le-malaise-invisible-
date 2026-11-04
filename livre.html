@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Un livre pour prendre le temps de comprendre nos expériences, nos émotions et ce qu'elles peuvent nous apprendre sur nous-mêmes.">
+  <title>Le Livre — Le Malaise Invisible</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#FBF9F5',
+            card: '#F4F0E8',
+            forest: '#1E382B',
+            deep: '#13241C',
+            sage: '#6E8B7D',
+            pale: '#E3ECE7',
+            sienna: '#C27D56',
+            charcoal: '#2C332E',
+            muted: '#656E68'
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #FBF9F5; color: #2C332E; }
+    .section-number {
+      font-family: 'Cormorant Garamond', serif;
+      color: #C27D56;
+      font-size: 1.25rem;
+    }
+    .reading-card {
+      background: #F4F0E8;
+      border: 1px solid rgba(30,56,43,.08);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .reading-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(19,36,28,.07);
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased">
+
+  <!-- Navigation -->
+  <header class="border-b border-forest/10">
+    <nav class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 text-forest">
+        <div class="w-10 h-10 rounded-full border border-sage flex items-center justify-center">
+          <span class="font-serif text-2xl">M</span>
+        </div>
+        <span class="font-serif text-xl font-semibold">Le Malaise Invisible</span>
+      </a>
+
+      <a href="index.html" class="text-sm text-forest hover:text-sienna transition">
+        ← Retour à l'accueil
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Introduction -->
+    <section class="max-w-6xl mx-auto px-6 pt-20 pb-16">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+
+        <div>
+          <p class="text-sienna text-xs font-semibold tracking-[.22em] uppercase mb-5">
+            Le livre
+          </p>
+
+          <h1 class="font-serif text-5xl md:text-6xl text-forest leading-tight mb-7">
+            Et si nos périodes de douleur avaient quelque chose à nous apprendre sur nous-mêmes ?
+          </h1>
+
+          <p class="text-muted leading-8 mb-5">
+            Il existe des périodes dans nos vies où nos repères vacillent.
+            Des moments où la souffrance, les déceptions ou les changements
+            nous conduisent à nous interroger sur nous-mêmes, sur les autres
+            et sur le sens de ce que nous vivons.
+          </p>
+
+          <p class="text-muted leading-8">
+            Mais prenons-nous réellement le temps de comprendre ce qui se passe en nous ?
+          </p>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden bg-card aspect-[4/5] flex items-center justify-center">
+            <!-- Illustration à personnaliser ultérieurement -->
+            <div class="text-center px-8">
+              <div class="w-20 h-20 rounded-full border border-sage/50 mx-auto mb-6 flex items-center justify-center">
+                <span class="font-serif text-5xl text-sage">M</span>
+              </div>
+              <p class="font-serif text-3xl text-forest">Le Malaise Invisible</p>
+              <p class="text-xs tracking-widest uppercase text-muted mt-3">Réflexions sur la connaissance de soi</p>
+            </div>
+          </div>
+          <div class="absolute -bottom-4 -left-4 w-24 h-24 rounded-full bg-pale -z-10"></div>
+        </div>
+
+      </div>
+
+      <div class="max-w-3xl mt-14 border-l-2 border-sienna pl-6">
+        <p class="font-serif text-2xl md:text-3xl text-forest leading-relaxed">
+          Ce livre est né de cette interrogation : et si certaines de nos expériences les plus difficiles étaient aussi des occasions de mieux nous connaître ?
+        </p>
+      </div>
+    </section>
+
+    <!-- Séparateur -->
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="border-t border-forest/10"></div>
+    </div>
+
+    <!-- Partie 1 -->
+    <section class="max-w-4xl mx-auto px-6 py-16">
+      <p class="section-number mb-3">01 — L'origine</p>
+      <h2 class="font-serif text-4xl text-forest mb-7">
+        Pourquoi ce livre a-t-il été écrit ?
+      </h2>
+
+      <div class="space-y-5 text-muted leading-8">
+        <p>
+          Ce livre est né d'un cheminement personnel, de périodes de questionnement et de douleur qui m'ont amené à observer autrement mon rapport à moi-même, aux autres et à l'existence.
+        </p>
+        <p>
+          J'ai progressivement ressenti le besoin de mettre des mots sur des questions que nous traversons parfois sans prendre le temps de les approfondir.
+        </p>
+        <p>
+          Il ne s'agit pas de prétendre détenir des réponses à toutes ces interrogations, mais de prendre le temps de les poser, de les examiner et de comprendre ce qu'elles peuvent révéler de nous.
+        </p>
+      </div>
+    </section>
+
+    <!-- Partie 2 -->
+    <section class="bg-card">
+      <div class="max-w-4xl mx-auto px-6 py-16">
+        <p class="section-number mb-3">02 — Les interrogations</p>
+        <h2 class="font-serif text-4xl text-forest mb-7">
+          À quelles questions ce livre nous invite-t-il à réfléchir ?
+        </h2>
+
+        <p class="text-muted leading-8 mb-7">
+          Nos expériences soulèvent parfois des questions que nous préférons éviter.
+        </p>
+
+        <div class="space-y-4">
+          <div class="flex gap-4 items-start">
+            <span class="text-sienna">—</span>
+            <p class="text-charcoal leading-7">Pourquoi certaines périodes de notre vie nous font-elles autant souffrir ?</p>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-sienna">—</span>
+            <p class="text-charcoal leading-7">Que révèlent nos émotions sur nos véritables besoins et nos aspirations ?</p>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-sienna">—</span>
+            <p class="text-charcoal leading-7">Quelle place accordons-nous réellement aux autres dans notre existence ?</p>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-sienna">—</span>
+            <p class="text-charcoal leading-7">Quelle influence notre amour-propre et l'importance que nous accordons à nous-mêmes exercent-ils sur notre manière de penser, d'agir et de considérer les autres ?</p>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-sienna">—</span>
+            <p class="text-charcoal leading-7">Pourquoi accordons-nous parfois autant d'importance à la réussite matérielle et à la reconnaissance ?</p>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-sienna">—</span>
+            <p class="text-charcoal leading-7">Que transmettons-nous aux enfants : simplement les moyens de réussir ou aussi ceux de se connaître ?</p>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-sienna">—</span>
+            <p class="text-charcoal leading-7">Que choisissons-nous de comprendre, ou de ne pas comprendre, de nos expériences ?</p>
+          </div>
+        </div>
+
+        <p class="text-muted leading-8 mt-8">
+          Ces questions ne cherchent pas à imposer une manière de penser.
+          Elles invitent à regarder certaines évidences sous un autre angle.
+        </p>
+      </div>
+    </section>
+
+    <!-- Partie 3 -->
+    <section class="max-w-4xl mx-auto px-6 py-16">
+      <p class="section-number mb-3">03 — Ce que l'on peut en retirer</p>
+      <h2 class="font-serif text-4xl text-forest mb-7">
+        Qu'est-ce que le lecteur peut en retirer ?
+      </h2>
+
+      <div class="space-y-5 text-muted leading-8">
+        <p>Peut-être une autre manière de regarder ses expériences.</p>
+        <p>
+          Prendre conscience de certains mécanismes, mieux distinguer ses désirs de ses besoins, interroger ses réactions et réfléchir à la place que l'on accorde aux autres.
+        </p>
+        <p>
+          Ce cheminement peut également nous amener à reconnaître certaines contradictions en nous-mêmes : ce que nous attendons des autres, ce que nous leur reprochons et ce que nous ne voyons pas toujours dans notre propre comportement.
+        </p>
+        <p>
+          L'essentiel n'est pas de parvenir à une conclusion parfaite, mais d'apprendre à porter sur nous-mêmes un regard aussi juste que possible, sans nous condamner injustement ni nous enfermer dans des réflexions qui finiraient par nous rendre malheureux.
+        </p>
+      </div>
+    </section>
+
+    <!-- Partie 4 -->
+    <section class="bg-pale/60">
+      <div class="max-w-4xl mx-auto px-6 py-16">
+        <p class="section-number mb-3">04 — Prendre le temps</p>
+        <h2 class="font-serif text-4xl text-forest mb-7">
+          Pourquoi prendre le temps de lire ou d'écouter ce contenu ?
+        </h2>
+
+        <div class="space-y-5 text-muted leading-8">
+          <p>
+            Nous consacrons une grande partie de notre temps à répondre aux exigences de la vie quotidienne. Nous travaillons, nous poursuivons des objectifs, nous construisons des projets et nous cherchons à avancer.
+          </p>
+          <p>
+            Mais combien de temps consacrons-nous réellement à comprendre ce que nous vivons intérieurement ?
+          </p>
+          <p>
+            Apprendre à se connaître ne consiste pas uniquement à observer ses émotions, ses réactions ou ses aspirations. C'est aussi apprendre à mieux comprendre le monde extérieur dans lequel nous évoluons.
+          </p>
+          <p>
+            En prenant le temps d'explorer notre monde intérieur, nous pouvons progressivement porter un regard différent sur la société, ses attentes, ses exigences et la place qu'elle nous demande d'occuper. Nous pouvons alors nous interroger sur ce qui relève véritablement de nos aspirations et sur ce qui nous est parfois imposé, directement ou indirectement, par notre environnement.
+          </p>
+          <p>
+            Cette prise de recul nous permet de mieux comprendre l'influence de la société sur notre manière de penser, de vivre et de nous juger. Elle nous invite également à questionner certaines normes que nous avons parfois acceptées sans même prendre le temps de savoir si elles correspondent réellement à ce que nous sommes.
+          </p>
+          <p>
+            Enfin, être seul peut aussi avoir une véritable importance dans ce cheminement. La solitude, lorsqu'elle est choisie et vécue sereinement, permet de se reconnecter à son monde intérieur, de prendre du recul et de laisser davantage de place à la réflexion.
+          </p>
+          <p>
+            La connaissance de soi ne se limite donc pas à identifier ses qualités et ses défauts. Elle suppose aussi d'observer ses réactions, de questionner ses convictions et de comprendre la manière dont nos expériences et notre environnement influencent notre rapport au monde.
+          </p>
+          <p class="text-forest font-semibold">
+            Ce livre propose simplement de prendre ce temps.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partie 5 : Accès -->
+    <section id="acces" class="max-w-5xl mx-auto px-6 py-20">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="section-number mb-3">05 — Découvrir le livre</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-forest mb-5">
+          Comment accéder au contenu ?
+        </h2>
+        <p class="text-muted leading-8">
+          Deux possibilités seront proposées pour découvrir le livre,
+          selon votre préférence.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-7">
+
+        <!-- Version numérique -->
+        <div class="reading-card rounded-2xl p-8">
+          <div class="h-36 rounded-xl bg-pale flex items-center justify-center mb-7">
+            <div class="w-20 h-24 bg-paper border border-sage/30 rounded-md shadow-sm flex flex-col items-center justify-center">
+              <span class="font-serif text-3xl text-forest">M</span>
+              <span class="text-[8px] tracking-widest text-muted mt-2">LE LIVRE</span>
+            </div>
+          </div>
+
+          <p class="text-xs tracking-widest uppercase text-sienna font-semibold mb-2">
+            Version numérique
+          </p>
+          <h3 class="font-serif text-3xl text-forest mb-3">
+            Lire le livre
+          </h3>
+          <p class="text-muted text-sm leading-7 mb-7">
+            Prenez le temps de parcourir les réflexions à votre rythme.
+          </p>
+
+          <!-- Remplacer # par le lien du livre numérique -->
+          <a href="#"
+             class="inline-flex items-center gap-2 text-forest font-semibold text-sm border-b border-sienna pb-1 hover:text-sienna transition">
+            Accéder à la version numérique
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Version audio -->
+        <div class="reading-card rounded-2xl p-8">
+          <div class="h-36 rounded-xl bg-[#E8D5C8] flex items-center justify-center mb-7">
+            <div class="w-20 h-20 rounded-full border border-sienna/50 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#1E382B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 10v4"/>
+                <path d="M6 6v12"/>
+                <path d="M10 3v18"/>
+                <path d="M14 7v10"/>
+                <path d="M18 5v14"/>
+                <path d="M22 10v4"/>
+              </svg>
+            </div>
+          </div>
+
+          <p class="text-xs tracking-widest uppercase text-sienna font-semibold mb-2">
+            Version audio
+          </p>
+          <h3 class="font-serif text-3xl text-forest mb-3">
+            Écouter le livre
+          </h3>
+          <p class="text-muted text-sm leading-7 mb-7">
+            Écoutez les réflexions où et quand vous le souhaitez.
+          </p>
+
+          <!-- Remplacer # par le lien du livre audio -->
+          <a href="#"
+             class="inline-flex items-center gap-2 text-forest font-semibold text-sm border-b border-sienna pb-1 hover:text-sienna transition">
+            Accéder à la version audio
+            <span>→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="bg-forest text-paper">
+      <div class="max-w-4xl mx-auto px-6 py-20 text-center">
+        <div class="w-12 h-px bg-sienna mx-auto mb-9"></div>
+        <p class="font-serif text-3xl md:text-4xl leading-relaxed">
+          Et si le véritable enseignement de nos périodes de douleur ne résidait pas uniquement dans ce que nous avons traversé, mais surtout dans ce que nous choisissons d'en comprendre ?
+        </p>
+        <div class="w-12 h-px bg-sienna mx-auto mt-9"></div>
+        <a href="index.html"
+           class="inline-block mt-10 text-sm text-paper/80 hover:text-white transition">
+          ← Revenir à la page d'accueil
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-deep text-paper/60 text-center px-6 py-7">
+    <p class="text-xs">© Le Malaise Invisible — Tous droits réservés</p>
+  </footer>
+
+</body>
+                  </html>
+                  
