@@ -528,13 +528,33 @@
               Prenez le temps de parcourir les réflexions à votre rythme.
             </p>
 
-            <!-- Remplacer # par le lien de la version numérique -->
-            <a
-              href="#"
-              class="inline-flex items-center justify-center w-full bg-forest text-white py-4 rounded-full font-medium hover:bg-sienna transition"
-            >
-              Accéder à la version numérique
-            </a>
+         <button
+  id="open-digital-reader"
+  type="button"
+  class="inline-flex items-center justify-center w-full bg-forest text-white py-4 rounded-full font-medium hover:bg-sienna transition"
+>
+  Accéder à la version numérique
+</button>
+
+<div id="digital-reader" class="hidden mt-8">
+  <iframe
+    src="lecture.html"
+    title="Lecteur numérique — Le Malaise Invisible"
+    class="w-full rounded-2xl border"
+    style="height: 850px;"
+  ></iframe>
+</div>
+
+<script>
+document.getElementById('open-digital-reader').addEventListener('click', function () {
+  const reader = document.getElementById('digital-reader');
+  reader.classList.toggle('hidden');
+
+  if (!reader.classList.contains('hidden')) {
+    reader.scrollIntoView({ behavior: 'smooth' });
+  }
+});
+</script>
 
           </div>
 
