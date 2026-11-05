@@ -159,11 +159,25 @@
                 </a>
 
                 <!-- NAV DESKTOP -->
-                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-charcoal/80">
-                    <a href="#demarche" class="hover:text-brand-sienna transition">La Démarche</a>
-                    <a href="#themes" class="hover:text-brand-sienna transition">Les Thèmes</a>
-                    <a href="livre.html" class="hover:text-brand-sienna transition">Le livre</a>
-                </nav>
+                <!-- Menu ordinateur -->
+<nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-charcoal/80">
+    <a href="#demarche">La Démarche</a>
+    <a href="#themes">Les Thèmes</a>
+    <a href="livre.html">Le livre</a>
+</nav>
+
+<!-- Menu téléphone -->
+<details class="md:hidden relative">
+    <summary class="list-none cursor-pointer text-2xl text-brand-charcoal">
+        ☰
+    </summary>
+
+    <div class="absolute right-0 mt-3 w-48 bg-white shadow-lg rounded-lg p-4 z-50">
+        <a href="#demarche" class="block py-2">La Démarche</a>
+        <a href="#themes" class="block py-2">Les Thèmes</a>
+        <a href="livre.html" class="block py-2">Le livre</a>
+    </div>
+</details>
 
                 <!-- BOUTON D'ACTION HEADER -->
                 <div class="flex items-center space-x-4">
