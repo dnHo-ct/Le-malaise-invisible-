@@ -550,7 +550,12 @@ document.getElementById('open-digital-reader').addEventListener('click', functio
   const reader = document.getElementById('digital-reader');
   reader.classList.toggle('hidden');
 
-  if (!reader.classList.contains('hidden')) {
+  if (!reader.classList.contains('hidden'))if (typeof gtag === 'function') {
+  gtag('event', 'ebook_open', {
+    event_category: 'engagement',
+    event_label: 'Ouverture du lecteur numérique'
+  });
+  } {
     reader.scrollIntoView({ behavior: 'smooth' });
   }
 });
